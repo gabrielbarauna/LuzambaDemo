@@ -1,0 +1,114 @@
+/*
+=================================================================================================================================================================================================================
+footer
+=================================================================================================================================================================================================================
+*/
+.footer *{
+    color: var(--clr-ambar);  
+}
+.footer{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	padding: 50px 0;
+	box-sizing: border-box;
+    background-color: var(--clr-darkFooter);
+
+}
+.inner-footer{
+	display: flex;
+	margin: auto ;
+	width: 90%;
+	height: 100%;
+	justify-content: space-around;
+}
+.inner-footer .logo_container{
+	width: auto;
+	float: left;
+	height: 100%;
+	display: block;
+	padding-right: 40px;
+}
+.inner-footer .logo_container img{
+	width: 60px;
+	height: auto;
+	transform:scale(-1,1);
+}
+.inner-footer .footer_third{
+	/* width: calc(20% - 15px); */
+	max-width: 25%;
+	margin-right: 40px;
+	float: left;
+    height: 100%;
+}
+
+.inner-footer .footer_third:last-child{
+	margin-right: 0;
+}
+.inner-footer .footer_third h1{
+	font-size: 22px;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.inner-footer .footer_third a{
+	font-size: 16px;
+	color: var(--clr-lightAmbar); 
+	display: block;
+	font-weight: 40;
+	width: 100%;
+	margin-bottom: 6px;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+
+#networks{
+    text-align: center;
+	color: var(--clr-lightAmbar); 
+	
+}
+
+#networks li{
+	display:inline-block;
+	padding: 0 5px;
+}
+
+#networks li a {
+    font-size: 25px;
+}
+
+.inner-footer .footer_third span{
+	font-size: 20px;
+	font-weight: 200;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+}
+.inner-footer .footer_third a:hover{
+	opacity: 2;
+	font-weight: 600;
+}
+
+@media(max-width: 800px){
+
+	.footer .inner-footer{
+		width: 90%;
+		flex-direction: column;
+		
+	}
+	.inner_footer .logo_container,
+	.inner-footer .footer_third{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.inner-footer .logo_container{
+	padding-right: 0px;
+}
+
+	.footer_third{
+	min-width: 100%;
+	}
+
+}

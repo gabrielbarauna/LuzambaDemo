@@ -1,0 +1,176 @@
+p{
+    color: var(--clr-lightText);
+}
+.Intro-Header{
+    width: auto;
+    background-color: #0c0c0c;
+    width: 100vw;
+    height: 90vh;
+
+    
+}
+.Intro-Header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: drop-shadow(0px 5px 3px black); */
+    animation: drop 1.5s ease;
+    background-image: url("/Imagens/posfesta1.jpg");
+}
+.intro-header-text{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;  
+    font-size: 20px;
+
+}
+
+.intro-header-text b{
+    color: var(--clr-ambar);
+    font-weight: bold;
+    padding: 10px ;
+
+}
+
+.intro-header-text h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: var(--clr-ambar);
+}
+   
+.intro{
+    padding: 20px;
+    background-color: #030202;
+    align-items: center;
+    font-size: 22px;
+
+}
+.intro h2{
+   text-align: center;
+   padding: 20px;
+   color: var(--clr-ambar);
+}
+.intro p{
+    padding: 2% 20%;
+    font-size: 20px;
+ }
+
+.container-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;  
+}
+.pic-about{
+    width: 50%;
+    max-height: 80vh;
+}
+.pic-about img{
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+    
+}
+
+.text-about{
+    width: 50%;
+    min-height: 20vh;
+    background-color: #121212;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.text-about h3{
+    font-size: 36px;
+    color: var(--clr-ambar);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+.text-about p{
+    font-size: 18px;
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+
+#Section-intro{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+  }
+  #Section-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: drop-shadow(0px 5px 3px black); */
+    animation: drop 1.5s ease;
+    background-image: url("/Imagens/posfesta1.jpg");
+  }
+  .pictureText{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .intro-header-text{
+        position: absolute;
+        top: 35%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 60%;
+        display: flex;
+        flex-direction: column;  
+        font-size: 15px;
+        padding: 20px;
+    }
+    .intro-header-text h2{
+        font-size: 30px;
+        padding-bottom: 10px;
+        color: var(--clr-ambar);
+    }
+    .container-about{
+        flex-direction: column;
+    }
+    .text-about{
+        width: 100%;
+        padding: 10px;
+         min-height: 10vh;
+    }
+    .text-about h3{
+        font-size: 22px;
+    }
+    .text-about p{
+        font-size: 18px;
+    }
+    .pictureText{
+        top: 30%;
+        left: 30%;
+        width: 60%;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+                 
+        
+            
+}
+    /*

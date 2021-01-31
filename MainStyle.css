@@ -1,0 +1,291 @@
+/*
+================================================================================================================================================================================================================= 
+Header
+=================================================================================================================================================================================================================
+*/
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+.container{
+  height:80%;
+  width: auto;
+}
+.s1{
+  background-image:url("./Imagens/Ant4.jpg") ;
+  background-size: cover;
+  height: 100%;
+  width: 70%;
+}
+
+.s2{
+  height: 100%;
+  width: 30%;
+  font-size:  64px;
+  position: relative;
+  top: 20%;
+  left: 50%;   
+  transform:translate(-50%, -20%) ;
+  background: linear-gradient(to left, var(--clr-ambar), #e0d204);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent ;
+}
+
+/*
+================================================================================================================================================================================================================= 
+video-container
+=================================================================================================================================================================================================================
+*/
+
+.video-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	z-index: 0;
+	overflow: hidden;
+	background-color: #050107;
+	display: flex;
+}
+
+
+/* header after */
+
+header::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+.presentation-container{
+	background-color: var(--clr-dark);
+	width: 100%;
+    height: 100%;
+	display: grid;
+	
+}
+.introduction {
+	flex: 1;
+	/* height: 100%;
+	align-items: center; */
+	/* background-color: rgba(0, 0, 0, 0.63); */
+	/* display: flex;
+  	justify-content: center; */
+
+	 
+}
+.intro-text {
+	/* display: flex; */
+	/* justify-content: center; */
+	height: 100%;
+	/* max-width: 50vw; */
+}
+.intro-text h1 {
+	font-size: 70px;
+	font-weight: 500;
+	background-color: white;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	margin: 5%;
+
+	
+}
+.intro-text h2 {
+	font-size: 25px;
+	font-weight: 500;
+	background: var(--clr-ambar);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* display: flex; */
+	text-align: center;
+	margin: 5%;
+}
+.intro-text p {
+	font-size: 18px;
+	color: white;
+	/* justify-content: center; */
+	line-height: 1.5;
+	font-weight: 500;
+	/* margin-left: 40px;
+	margin-right: 40px; */
+	text-align: justify;
+	margin: 5%;
+
+}
+@media screen and (max-width: 800px) {
+	.intro-text h1{
+		font-size: 40px;
+	}
+	.intro-text h2{
+		font-size: 20px;
+	}
+			
+	}
+
+
+/* ================================================================================================================================================================================================================= 
+Images
+================================================================================================================================================================================================================= */
+.cover {
+	flex: 1;
+	/* display: flex; */
+	/* justify-content: center; */
+	height: 100%;
+	/* max-width: 50vw; */
+}
+
+.cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* filter: drop-shadow(0px 5px 3px black); */
+	animation: drop 1.5s ease;
+	border-radius: 2%;
+}
+
+.body{
+	background-color: var(--clr-dark);
+}
+/* ================================================================================================================================================================================================================= 
+Boxes
+================================================================================================================================================================================================================= */
+.containerBox{
+	display:  flex;
+    justify-content: center;
+    align-self: center;
+    /* min-height:  10vh; */
+	background: var(--clr-BlackDark);
+	padding: 5% 0;
+}
+
+.section1{
+	position: relative;
+	max-width: 90%;
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(300px ,auto);
+    margin:  5%;
+    grid-auto-flow: dense;
+	grid-gap : 30px;	
+}
+.box{
+	background:transparent;
+    font-size: 15px;
+    text-align: center ;
+	transition: 0.5s;
+	border: solid 1px  white;
+}
+.box img{
+	position: center;
+    max-width: 70px;
+	margin: 8%;
+}
+.box p{
+	font-size: 20px;
+	color:white;
+	/* justify-content: center; */
+	
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 5%;
+	text-align: center;
+	height: 50%;
+	padding-bottom: 5% ;
+}
+.text{
+	height: 100%;
+}
+.text h3{
+	min-height: 33%;
+	padding: 10px 0;
+	color: var(--clr-ambar);
+	padding: 20px 0;
+}
+.text p{
+	padding-bottom: 20px;
+	font-size: 18px;
+
+}
+
+@media screen and (max-width: 800px) {
+.services-container,
+.section1,
+.presentation-container,
+.presentation{
+               /* grid-gap: 10px; */
+		grid-template-columns: 1fr;
+		
+      }
+
+      p{
+          font-size: 100%;
+		}
+		.services-container{
+			font-size: 100%;
+		}
+		
+}
+/*
+=================================================================================================================================================================================================================
+Introduction
+=================================================================================================================================================================================================================
+*/
+.intro{
+	z-index: 1;
+    background: var(--clr-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+	z-index: 1;
+    background: var(--clr-darkFooter);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    transform: translateY(100%);
+
+}
+.intro-text-Animation .text{
+    color: var(--clr-ambar);
+    font-family: "Heebo", sans-serif;
+    font-size: 5rem;
+
+}
+.hide{
+    background: var(--clr-dark);
+    overflow: hidden;
+    
+}
+.hide span{
+    transform: translateY(100%);
+    display:inline-block;
+}
+@media screen and (max-width: 800px) {
+	
+			.intro-text-Animation .text{
+				font-size: 2rem;
+			}
+	}
+
